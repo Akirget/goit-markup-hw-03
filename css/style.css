@@ -106,6 +106,10 @@ address {
     font-style: normal;
 }
 
+.section {
+    padding: 94px 0;
+}
+
 .container {
     width: 1200px;
     margin-left: auto;
@@ -207,7 +211,7 @@ address {
 
 /* Главный герой */
 
-.hero {
+.hero-section {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -270,10 +274,12 @@ address {
     display: flex;
 }
 
+.features-item {
+    width: 270px;
+}
 
 .features-item + .features-item {
     margin-left: 30px;
-    max-width: 270px;
 }
 
 /* .features-item:not(:last-child) {
@@ -315,7 +321,7 @@ address {
 /* Чем занимается компания */
 
 .section-work {
-    padding-bottom: 94px;
+    padding: 0;
 }
 
 .work-list {
@@ -341,14 +347,19 @@ address {
 /* Команда компании */
 
 .section-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
+    
     background-color: var(--team-color-background);
 }
 
 .team-list {
     display: flex;
+}
+
+.team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item + .team-item {
@@ -368,7 +379,7 @@ address {
 }
 
 .team-profession {
-    
+    padding-bottom: 30px;;
 
     font-size: 16px;
     line-height: 1.19;
@@ -427,10 +438,11 @@ address {
     color: var(--accent-color);
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
     margin-bottom: 9px;
 
 }
+
 
 /*  ---------------------- */
 /* СТИЛИ PORTFOLIO.HTML */
